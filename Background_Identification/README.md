@@ -1,26 +1,3 @@
-# Week3 programming assignment
-Data files you will find here https://github.com/hse-aml/hadron-collider-machine-learning/releases/tag/Week_3
-
-## FILES at the release
-training.csv - all features
-
-check_agreement.csv - all features besides mass for agreement check
-
-check_correlation.csv - all features for correlation check
-
-test.csv - all features besides mass
-
-## Goal
-
-the goal is to design prediction model that will give best score (ROC AUC) and will meet the constraints of 
-
-- similar performance on simulated and real data (agreement check)
-- decorrelation with the mass (correlation check)
-
-the predictions over `test.csv` (i.e. submission file) should be sent to coursera for evaluation.
-
-**training.csv**
-
 This is a labelled dataset (the label ‘signal’ being ‘1’ for signal events, ‘0’ for background events) to train the classifier. Signal events have been simulated, while background events are real data.
 
 This real data is collected by the LHCb detectors observing collisions of accelerated particles with a specific mass range in which τ → 3μ can’t happen. We call these events “background” and label them 0.
